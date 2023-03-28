@@ -144,7 +144,7 @@ function playPong() {
     }
 }
 
-input.onLogoEvent(TouchButtonEvent.Pressed, function on_logo_pressed() {
+input.onLogoEvent(TouchButtonEvent.Touched, function on_logo_touched() {
     
     if (GameType == 2) {
         player.delete()

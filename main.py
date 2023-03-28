@@ -126,7 +126,7 @@ def playPong():
             game.set_score(point)
             game.game_over()
     
-def on_logo_pressed():
+def on_logo_touched():
     global GameType, player, in_game
     if GameType == 2:
         player.delete()
@@ -137,7 +137,7 @@ def on_logo_pressed():
     showGame(GameType)
     if GameType == 2:
         player = game.create_sprite(2, 4)
-input.on_logo_event(TouchButtonEvent.PRESSED, on_logo_pressed)
+input.on_logo_event(TouchButtonEvent.TOUCHED, on_logo_touched)
 
 def on_button_pressed_a():
     global bar_x
